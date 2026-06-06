@@ -1,0 +1,27 @@
+{
+  "name": "starweb-ui",
+  "description": "Canvas UI primitives for browser games",
+  "author": "Mason L'Etoile",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starlet-web-engine/starweb-ui"
+  },
+  "keywords": ["ui", "canvas", "imgui", "2d", "typescript", "browser", "starweb"],
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "~6.0.2"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "tsc -p tsconfig.build.json"
+  },
+  "files": ["dist", "src"],
+  "exports": {
+    "./*.js": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
+    }
+  }
+}
