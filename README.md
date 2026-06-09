@@ -10,7 +10,7 @@ Canvas UI primitives for browser games
 
 ## Installation
 ```bash
-npm install github:starlet-web-engine/starweb-ui
+npm install github:starweb-libs/ui
 ```
 
 ## License
