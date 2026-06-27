@@ -2,7 +2,7 @@
   "name": "@starweb-libs/ui",
   "description": "Canvas UI primitives for browser games",
   "author": "Mason L'Etoile",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,28 +14,35 @@
   },
   "keywords": ["ui", "canvas", "imgui", "2d", "typescript", "browser", "starweb"],
   "type": "module",
-  "devDependencies": { "typescript": "~6.0.2" },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "tsdown": "^0.22.0"
+  },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsdown",
     "prepare": "npm run build"
   },
   "files": ["dist"],
   "exports": {
     "./button.js": {
-      "types": "./dist/button.d.ts",
-      "import": "./dist/button.js"
+      "types": "./dist/button.d.mts",
+      "@starweb-libs/source": "./src/button.ts",
+      "import": "./dist/button.mjs"
     },
     "./layout.js": {
-      "types": "./dist/layout.d.ts",
-      "import": "./dist/layout.js"
+      "types": "./dist/layout.d.mts",
+      "@starweb-libs/source": "./src/layout.ts",
+      "import": "./dist/layout.mjs"
     },
     "./slider.js": {
-      "types": "./dist/slider.d.ts",
-      "import": "./dist/slider.js"
+      "types": "./dist/slider.d.mts",
+      "@starweb-libs/source": "./src/slider.ts",
+      "import": "./dist/slider.mjs"
     },
     "./types.js": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/types.js"
+      "types": "./dist/types.d.mts",
+      "@starweb-libs/source": "./src/types.ts",
+      "import": "./dist/types.mjs"
     }
   }
 }
