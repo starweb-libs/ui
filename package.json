@@ -2,7 +2,7 @@
   "name": "@starweb-libs/ui",
   "description": "Canvas UI primitives for browser games",
   "author": "Mason L'Etoile",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
